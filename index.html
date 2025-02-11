@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Registration</title>
+    <link rel="stylesheet" href="css/register.css">
+
+</head>
+<body>
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="ancient.html">Ancient Era</a>
+        <a href="medieval.html">Medieval Era</a>
+        <a href="industrial.html">Industrial Era</a>
+        <a href="modern.html">Modern Era</a>
+        <a href="future.html">Future Era</a>
+    </div>
+
+    <div class="container">
+        <h1>Event Registration</h1>
+        <p>Register now to participate in our upcoming technological event!</p>
+        <form id="registrationForm">
+            <div class="form-group">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+            <div class="form-group">
+                <label for="event">Select Event:</label>
+                <select id="event" name="event" required>
+                    <option value="Ancient Era Innovations">Ancient Era Innovations</option>
+                    <option value="Medieval Technology">Medieval Technology</option>
+                    <option value="Industrial Revolution">Industrial Revolution</option>
+                    <option value="Modern Tech Advances">Modern Tech Advances</option>
+                    <option value="Future Innovations">Future Innovations</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="message">Additional Comments:</label>
+                <textarea id="message" name="message" rows="4"></textarea>
+            </div>
+            <button type="submit">Register</button>
+            <p class="message" id="successMessage">Thank you for registering!</p>
+        </form>
+    </div>
+
+    <script src="js/register.js"></script>
+</body>
+</html>
